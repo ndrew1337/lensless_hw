@@ -1,0 +1,16 @@
+defaults:
+  - model: admm100
+  - metrics: lensless
+  - datasets: digicam_eval
+  - dataloader: lensless
+  - transforms: none
+  - writer: wandb
+  - _self_
+inferencer:
+  device_tensors: ["lensless", "psf"]
+  device: auto
+  save_path: "admm100"
+  seed: 1
+  skip_model_load: true
+  from_pretrained: null
+  log_wandb: false

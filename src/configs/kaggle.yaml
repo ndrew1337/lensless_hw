@@ -1,0 +1,22 @@
+defaults:
+  - lensless
+  - override /model: modular_prepost
+  - _self_
+
+trainer:
+  n_epochs: 10
+  epoch_len: 2000
+  early_stop: 6
+  use_amp: true
+  override: true
+
+dataloader:
+  num_workers: 4
+
+datasets:
+  test:
+    limit: 300
+
+writer:
+  run_name: kaggle-prepost-amp
+  tags: [kaggle]

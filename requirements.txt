@@ -1,0 +1,25 @@
+torch
+torchvision
+torchmetrics
+numpy
+tqdm
+matplotlib
+pandas
+wandb
+comet_ml
+hydra-core
+
+# --- HW05 lensless-specific ---
+opencv-python
+scipy
+lpips
+datasets
+huggingface_hub
+gdown
+waveprop @ git+https://github.com/ebezzam/waveprop.git@84c3e7dd50c7193e4c069a7581740ecbf33a3167
+slm_controller @ git+https://github.com/ebezzam/slm-controller.git@7fa4ffac3bdb9fae316f66f4ac9517806ae010ef
+perlin_numpy @ git+https://github.com/pvigier/perlin-numpy.git@5e26837db14042e51166eb6cad4c0df2c1907016
+
+black
+isort
+pre-commit

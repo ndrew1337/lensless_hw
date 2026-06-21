@@ -1,0 +1,10 @@
+_target_: src.model.ModularReconstruction
+inversion:
+  _target_: src.model.LeADMM
+  n_iters: 5
+  learnable: true
+  mu: 1e-4
+  tau: 2e-4
+pre:
+  _target_: src.model.DRUNet
+  channels: [32, 64, 128, 256]
